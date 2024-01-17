@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+<h3>Calculator</h3>
+
+<form th:action="@{home/sum}" method="get">
+
+    <label>
+        <input type="number" name="number1" placeholder="Number1">
+    </label>
+
+    <label>
+        <input type="number" name="number2" placeholder="Number2">
+    </label>
+
+    <button type="submit">Calculate</button>
+
+    <h1>Kết quả là: [[${result}]]</h1>
+</form>
+</body>
+</html>
